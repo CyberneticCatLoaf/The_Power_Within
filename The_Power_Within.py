@@ -31,11 +31,24 @@ prompts = ["Destroying every drug dealer in Gotham",
                "Receiving maximum foodage",
                "Fucking Julius' Mom",
                "Rebuilding the multiverse",
-               '"Batman was trash" - Cameron',
-               '"Locating Fucks To Give" - King Dong',
-               '"Please Give Me Bread Mimicry Again!" - Ethan',
-               '"Fucking Bitches Since 2003 With No Kids" - Julius',
-               '"Your IP Is Now Mine" - Josh'
+               "Gathering Kryptonite",
+               "Experimenting on rats",
+               "Cloaking",
+               "Uncloaking",
+               "Phasing through walls",
+               "Fighting Godzilla",
+               "Shooting eye lasers",
+               "Soaring the skies",
+               "Wreaking Havoc",
+               "Warping though space",
+               "─=≡Σᕕ(⏒ ʖ̯⏒)ᕗ",
+               "Running at lightspeed",
+               "Breaking the sound barrier",
+               "Talking to animals",
+               "Reading minds",
+               "Transforming",
+               "Breaking faces",
+               "Collecting the chaos emeralds"
                ]
 
 
@@ -121,7 +134,7 @@ def Gallows():
     print("")
 
 
-def Round_Two():
+def Round_Two_Logo():
 
     print(" /$$$$$$$   /$$$$$$  /$$   /$$ /$$   /$$ /$$$$$$$         /$$$$$$  /$$")
     print("| $$__  $$ /$$__  $$| $$  | $$| $$$ | $$| $$__  $$       /$$__  $$| $$")
@@ -136,15 +149,71 @@ def Round_Two():
 
 def Credits():
     print('"Batman Was Trash" - Cameron')
+    time.sleep(.5)
     print('')
+    time.sleep(.5)
+    print('')
+    time.sleep(.5)
+    print('')
+    time.sleep(.5)
     print('"Locating Fucks To Give" - King Dong')
+    time.sleep(.5)
     print('')
+    time.sleep(.5)
+    print('')
+    time.sleep(.5)
+    print('')
+    time.sleep(.5)
     print('"Please Give Me Bread Mimicry Again!" - Ethan')
+    time.sleep(.5)
     print('')
+    time.sleep(.5)
+    print('')
+    time.sleep(.5)
+    print('')
+    time.sleep(.5)
     print('"Fucking Bitches Since 2003 With No Kids" - Julius')
+    time.sleep(.5)
     print('')
+    time.sleep(.5)
+    print('')
+    time.sleep(.5)
+    print('')
+    time.sleep(.5)
     print('"Your IP Is Now Mine" - Josh')
+    time.sleep(.5)
     print('')
+    time.sleep(.5)
+    print('')
+    time.sleep(.5)
+    print('')
+    time.sleep(.5)
+
+    for i in range(6):
+        print(random.choice(prompts))
+        time.sleep(.5)
+        print('')
+        time.sleep(.5)
+        print('')
+        time.sleep(.5)
+        print('')
+        time.sleep(.5)
+        print(random.choice(prompts))
+        time.sleep(.5)
+        print('')
+        time.sleep(.5)
+        print('')
+        time.sleep(.5)
+        print('')
+        time.sleep(.5)
+        print(random.choice(prompts))
+        time.sleep(.5)
+        print('')
+        time.sleep(.5)
+        print('')
+        time.sleep(.5)
+        print('')
+        time.sleep(.5)
     
 ##Game Mechanics
 
@@ -153,65 +222,65 @@ def Round_Load():
     for i in range(3):
         msg = random.choice(prompts)
 
-        Round_Two()
+        Round_Two_Logo()
         print('{}.'.format(msg))
         print("|===------------------------|")
         time.sleep(0.2)
         clear()
-        Round_Two()
+        Round_Two_Logo()
         print('{}..'.format(msg))
         print("|======---------------------|")
         time.sleep(0.2)
         clear()
-        Round_Two()
+        Round_Two_Logo()
         print('{}...'.format(msg))
         print("|=========------------------|")
         time.sleep(0.2)
         clear()
 
-        Round_Two()
+        Round_Two_Logo()
         print('{}.'.format(msg))
         print("|===============------------|")
         time.sleep(0.2)
         clear()
-        Round_Two()
+        Round_Two_Logo()
         print('{}..'.format(msg))
         print("|=================----------|")
         time.sleep(0.2)
         clear()
-        Round_Two()
+        Round_Two_Logo()
         print('{}...'.format(msg))
         print("|===================--------|")
         time.sleep(0.2)
         clear()
         
-        Round_Two()
+        Round_Two_Logo()
         print('{}.'.format(msg))
         print("|===================--------|")
         time.sleep(0.2)
         clear()
-        Round_Two()
+        Round_Two_Logo()
         print('{}..'.format(msg))
         print("|===================--------|")
         time.sleep(0.2)
         clear()
-        Round_Two()
+        Round_Two_Logo()
         print('{}...'.format(msg))
         print("|========================---|")
         time.sleep(0.2)
         clear()
 
-        Round_Two()
+        Round_Two_Logo()
         print('{}.'.format(msg))
         print("|=========================--|")
         time.sleep(0.2)
         clear()
-        Round_Two()
+        Round_Two_Logo()
         print('{}..'.format(msg))
         print("|==========================-|")
         time.sleep(0.2)
         clear()
-        Round_Two()
+        Round_Two_Logo()
         print('{}...'.format(msg))
         print("|===========================|")
         time.sleep(0.2)
@@ -732,9 +801,6 @@ def Round_Two():
 
         
     
-    
-
-
 
 def Classic():
 
@@ -771,16 +837,17 @@ def Classic():
             clear()
             break
 
+    while True:
         Round_Load()
         Game_Name()
         print("")
         input("Thats was the end of round 1! Press enter to commence round 2!")
         clear()
-        break
-
-    while True:
+        time.sleep(.5)
+        
         Round_Two()
         break
+    
         
 
 
@@ -959,27 +1026,8 @@ while True:
 
 ##Game Over
 
-for i in range(10):
-    Game_Name()
-    Credits()
-    time.sleep(.1)
-    Game_Name()
-    Credits()
-    time.sleep(.1)
-    Game_Name()
-    Credits()
-    time.sleep(.1)
-    Game_Name()
-    Credits()
-    time.sleep(.1)
-    Game_Name()
-    Credits()
-    time.sleep(.1)
-    Game_Name()
-    Credits()
-    time.sleep(.1)
-
-time.sleep(5)
-
+clear()
+Game_Name()
+Credits()
 clear()
 
